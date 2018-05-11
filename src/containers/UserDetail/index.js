@@ -108,7 +108,7 @@ class UserDetail extends Component {
                   </Form.Field>
                   <Form.Field>
                     { userData.type === constants.MANAGER && <Input disabled={mode === 'edit' && type !== constants.MEMBER} value={password} name="password" onChange={this.handleChange} fluid type="password" placeholder='password' />}
-                    { userData.type === constants.ADMIN && <Input value={password} name="password" onChange={this.handleChange} fluid type="password" placeholder='password' />}
+                    { userData.type === constants.ADMIN && <Input disabled={mode === 'edit' && type === constants.ADMIN} value={password} name="password" onChange={this.handleChange} fluid type="password" placeholder='password' />}
                   </Form.Field>
                   <Form.Field>
                     <Dropdown disabled={mode === 'edit' && userData.type !== constants.ADMIN} value={type} onChange={this.handleDropdownChange} placeholder='Select Type' fluid selection options={typeOptions} />

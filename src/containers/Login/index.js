@@ -52,7 +52,7 @@ class Login extends Component {
       <Container fluid style={{ paddingTop: '10%' }}>
         <Grid>
           <Grid.Row centered>
-            <Grid.Column tablet={12} mobile={14} largeScreen={6}>
+            <Grid.Column tablet={12} mobile={14} largeScreen={6} widescreen={6}>
               <Segment textAlign="center" style={{ padding: '10%' }}>
                 <Header textAlign="center" as='h2'>LOGIN</Header>
                 <Form onSubmit={this.handleSubmit}>
